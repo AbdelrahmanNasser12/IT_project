@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 require_once "connection.php";
 
 $NS=new connection();
@@ -47,6 +50,7 @@ if(stat==true)
 	$q=mysql_query("insert into users (Fname,Lname,User_Name,Password,Email) values('$firstName','$lastName','$username','$password','$email')");
 	if ($q)
 	{
+		$_SESSION["userName"]=$username;
 		header("location:index.php");
 	}
 	else
