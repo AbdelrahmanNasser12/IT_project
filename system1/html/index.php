@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +19,7 @@
 				<li><a href="about.php">About</a></li>
 				<li><a href="contact.php">Contact</a></li>
 				<li><a href="login.php">Log in</a></li>
+				<li><a href="logout.php">Log out</a></li>
 			</ul>
 		</nav>
 		<section class="sec1">
